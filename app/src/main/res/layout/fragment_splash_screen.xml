@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#9d00ff"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="118dp"
+            android:background="#9d00ff"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="116dp"
+                android:layout_height="113dp"
+                android:contentDescription="@string/mobile_moguls_company_logo"
+                app:srcCompat="@drawable/company_logo_1" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="393dp"
+                android:background="#9d00ff"
+                android:orientation="vertical"
+                tools:ignore="UselessParent">
+
+                <TextView
+                    android:id="@+id/companyTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="@string/mobile_mogul_s"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="#F9F3FF"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/companySlogan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tycoons_of_devices"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="#F9F3FF"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/splashTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/canvas_matt"
+            android:textAlignment="center"
+            android:textColor="#F9F3FF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+
+        <!-- Horizontal scrollView  -->
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="352dp"
+            android:layout_marginTop="120dp">
+
+            <!-- using linear layout to store multiple view
+                 inside a Horizontal Scroll View -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <!-- multiple button views to show a
+                      scrollable horizontal list -->
+                <ImageView
+                    android:id="@+id/drawing1"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="390dp"
+                    android:layout_height="318dp"
+                    android:layout_margin="10dp"
+                    android:backgroundTint="@color/white"
+                    android:contentDescription="@string/drawing_1"
+                    android:padding="4dp" />
+
+                <ImageView
+                    android:id="@+id/drawing2"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="390dp"
+                    android:layout_height="318dp"
+                    android:layout_margin="10dp"
+                    android:backgroundTint="@color/white"
+                    android:contentDescription="@string/drawing_2"
+                    android:padding="4dp" />
+
+                <ImageView
+                    android:id="@+id/drawing3"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="390dp"
+                    android:layout_height="318dp"
+                    android:layout_margin="10dp"
+                    android:backgroundTint="@color/white"
+                    android:contentDescription="@string/drawing_3"
+                    android:padding="4dp" />
+
+                <ImageView
+                    android:id="@+id/drawing4"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="390dp"
+                    android:layout_height="318dp"
+                    android:layout_margin="10dp"
+                    android:backgroundTint="@color/white"
+                    android:contentDescription="@string/drawing_4"
+                    android:padding="4dp" />
+
+                <ImageView
+                    android:id="@+id/drawing5"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="390dp"
+                    android:layout_height="318dp"
+                    android:layout_margin="10dp"
+                    android:backgroundTint="@color/white"
+                    android:contentDescription="@string/drawing_5"
+                    android:padding="4dp" />
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/drawScreenButton"
+                style="?android:attr/buttonCornerRadius"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/start_drawing" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/mainScreenButton"
+                style="?android:attr/buttonCornerRadius"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="@string/check_out_the_art_gallery" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/copyright"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="24dp"
+                android:foregroundGravity="bottom"
+                android:gravity="bottom"
+                android:text="@string/mobile_moguls_2024_v_0_0_15"
+                android:textColor="#F9F3FF"
+                android:textSize="14sp"
+                android:textStyle="italic" />
+
+            <Space
+                android:layout_width="40dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/classID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="24dp"
+                android:foregroundGravity="bottom"
+                android:gravity="bottom"
+                android:text="@string/mobile_app_programming"
+                android:textColor="#F9F3FF"
+                android:textSize="14sp"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

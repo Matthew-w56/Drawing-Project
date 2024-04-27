@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashScreen">
+    <fragment
+        android:id="@+id/splashScreen"
+        android:name="com.example.drawingapp.SplashScreen"
+        android:label="fragment_splash_screen"
+        tools:layout="@layout/fragment_splash_screen">
+        <action
+            android:id="@+id/action_splashScreen_to_saveScreen2"
+            app:destination="@id/saveScreen2" />
+        <action
+            android:id="@+id/action_splashScreen_to_artGalleryScreen"
+            app:destination="@id/artGalleryScreen" />
+        <action
+            android:id="@+id/action_splashScreen_to_drawScreen2"
+            app:destination="@id/drawScreen2" />
+    </fragment>
+    <fragment
+        android:id="@+id/saveScreen2"
+        android:name="com.example.drawingapp.SaveScreen"
+        android:label="fragment_art_gallery"
+        tools:layout="@layout/fragment_save_screen">
+        <action
+            android:id="@+id/action_saveScreen2_to_GalleryScreen"
+            app:destination="@id/artGalleryScreen" />
+        <action
+            android:id="@+id/action_saveScreen2_to_drawScreen2"
+            app:destination="@id/drawScreen2" />
+        <action
+            android:id="@+id/action_saveScreen2_to_cloud_saving_screen"
+            app:destination="@id/cloudSavingScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/drawScreen2"
+        android:name="com.example.drawingapp.DrawScreen"
+        android:label="fragment_draw_screen"
+        tools:layout="@layout/fragment_draw_screen">
+        <action
+            android:id="@+id/action_drawScreen2_to_artGalleryScreen"
+            app:destination="@id/artGalleryScreen" />
+        <action
+            android:id="@+id/action_drawScreen2_to_saveScreen2"
+            app:destination="@id/saveScreen2" />
+    </fragment>
+    <fragment
+        android:id="@+id/artGalleryScreen"
+        android:name="com.example.drawingapp.ArtGalleryScreen"
+        android:label="fragment_art_gallery_screen"
+        tools:layout="@layout/fragment_art_gallery_screen">
+        <action
+            android:id="@+id/action_artGalleryScreen_to_saveScreen2"
+            app:destination="@id/saveScreen2" />
+        <action
+            android:id="@+id/action_artGalleryScreen_to_drawScreen2"
+            app:destination="@id/drawScreen2" />
+        <action
+            android:id="@+id/action_artGalleryScreen_to_splashScreen"
+            app:destination="@id/splashScreen" />
+        <action
+            android:id="@+id/action_artGalleryScreen_to_CloudSavingScreen"
+            app:destination="@id/cloudSavingScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/cloudSavingScreen"
+        android:name="com.example.drawingapp.CloudSavingScreen"
+        android:label="fragment_cloud_saving_screen"
+        tools:layout="@layout/fragment_cloud_saving_screen">
+        <action
+            android:id="@+id/action_cloud_saving_screen_to_drawScreen2"
+            app:destination="@id/drawScreen2" />
+        <action
+            android:id="@+id/action_cloud_saving_screen_to_saveScreen2"
+            app:destination="@id/saveScreen2" />
+    </fragment>
+</navigation>

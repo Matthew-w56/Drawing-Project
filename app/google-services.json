@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "285741100827",
+    "project_id": "drawing-app-fbddb",
+    "storage_bucket": "drawing-app-fbddb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:285741100827:android:855d646d649b98157bedbe",
+        "android_client_info": {
+          "package_name": "com.example.drawingapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqq023W9xxWZoRpx-DBf5pYfoatXCy56o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
